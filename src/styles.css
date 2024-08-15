@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ************************* init **************************** */
+* {
+  box-sizing: border-box;
+  /* color: var(--textNormal); */
+}
+/* style guide ************************** */
+/* 01 typography */
+h1 {
+  @apply font-bold leading-normal text-2xl text-[var(--textNormal)];
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p.lg {
+}
+p.md {
+}
+p.sm {
+}
+small {
+}
+a {
+  @apply font-medium text-base;
+}
+/* 02 colors */
+:root {
+  --primaryLight: theme("colors.sky.600");
+  --primaryDark: theme("colors.sky.400");
+  --secondaryLight: theme("colors.orange.500");
+  --secondaryDark: theme("colors.orange.400");
+  --backgroundLight: theme("colors.slate.100");
+  --backgroundDark: theme("colors.slate.900");
+  --bgLight24: #0f172a24;
+  --bgDark24: #ffffff24;
+  --textFocusLight: theme("colors.slate.900");
+  --textNormalLight: theme("colors.slate.600");
+  --textDisableLight: theme("colors.slate.400");
+  --textFocusDark: theme("colors.slate.100");
+  --textNormalDark: theme("colors.slate.300");
+  --textDisableDark: theme("colors.slate.400");
+}
+.light {
+  --primary: var(--primaryLight);
+  --secondary: var(--secondaryLight);
+  --background: var(--backgroundLight);
+  --bg24: var(--bgLight24);
+  --textFocus: var(--textFocusLight);
+  --textNormal: var(--textNormalLight);
+  --textDisabled: var(--textDisableLight);
+}
+.dark {
+  --primary: var(--primaryDark);
+  --secondary: var(--secondaryDark);
+  --background: var(--backgroundDark);
+  --bg24: var(--bgDark24);
+  --textFocus: var(--textFocusDark);
+  --textNormal: var(--textNormalDark);
+  --textDisabled: var(--textDisabledDark);
+}
+/* layout */
+main {
+  @apply p-6 pt-[80px];
+}
